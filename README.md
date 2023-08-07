@@ -5,7 +5,7 @@ Its URL is https://wbxsxu168.github.io/myresume/
 
 ## Features:
 
-1. Frontend: React+MDB+Bootstrap v5+Axios  ( https://github.com/wbxsxu168/myresume )
+1. Frontend: React+MDB+Bootstrap v5+Axios  ( https://github.com/wbxsxu168/frontendMyResume.git )
 
 2. Backend:
    <div>version1: Python Django+DRF+JWT; OpenCV; NumPY etc.</div>
