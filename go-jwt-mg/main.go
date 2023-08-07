@@ -21,7 +21,7 @@ func main() {
 	gin.SetMode(gin.ReleaseMode)
 
 	router := gin.New()
-	//, "X-Requested-With", "Content-Type", "Accept", "Authorization", "Access-Control-Allow-Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"
+	//CORS support added as :  "X-Requested-With", "Content-Type", "Accept", "Authorization", "Access-Control-Allow-Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"
 	router.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"http://localhost:3000", "https://wbxsxu168.github.io"},
 		AllowMethods:     []string{"DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT"},
