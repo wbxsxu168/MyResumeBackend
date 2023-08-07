@@ -1,5 +1,4 @@
 package com.sunx.mysprmdbapp1.services;
-
 import com.sunx.mysprmdbapp1.model.ImageRecords;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

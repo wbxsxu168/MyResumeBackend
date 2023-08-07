@@ -33,8 +33,8 @@ public class OpenAPIConfig {
 		prodServer.setDescription("Server URL in Production environment");
 
 		Contact contact = new Contact();
-		contact.setEmail("wbxsxu168@hotmail.com");
-		contact.setName("sun xu");
+		contact.setEmail("__emailaddress_here__");
+		contact.setName("_____NameHere__");
 		contact.setUrl("https://localhost:8083");
 
 		License mitLicense = new License().name("MIT License").url("https://choosealicense.com/licenses/mit/");

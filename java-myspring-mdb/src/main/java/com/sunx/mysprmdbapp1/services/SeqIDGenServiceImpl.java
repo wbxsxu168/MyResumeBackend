@@ -1,5 +1,4 @@
 package com.sunx.mysprmdbapp1.services;
-
 import com.sunx.mysprmdbapp1.model.DBsequence;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

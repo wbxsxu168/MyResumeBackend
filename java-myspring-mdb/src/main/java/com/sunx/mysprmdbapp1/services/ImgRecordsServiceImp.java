@@ -1,6 +1,4 @@
 package com.sunx.mysprmdbapp1.services;
-
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

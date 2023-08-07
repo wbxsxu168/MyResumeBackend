@@ -1,5 +1,4 @@
 package com.sunx.mysprmdbapp1.repository;
-
 import org.springframework.data.mongodb.repository.MongoRepository;
 import com.sunx.mysprmdbapp1.model.ImageRecords;
 

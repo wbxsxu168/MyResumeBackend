@@ -1,13 +1,10 @@
 package com.sunx.mysprmdbapp1.controllers;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sunx.mysprmdbapp1.model.ImageRecords;
 import com.sunx.mysprmdbapp1.services.ImgRecordsServiceImp;
 import com.sunx.mysprmdbapp1.services.SeqIDGenService;
 import org.junit.Before;
 import org.junit.Test;
-
-
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -19,10 +16,8 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.when;
@@ -106,5 +101,5 @@ public class restapiCtrltest {
                 .contains("Name is mandatory"));
     }
 
-    // TODO create other unit tests if needed!
+     
 }

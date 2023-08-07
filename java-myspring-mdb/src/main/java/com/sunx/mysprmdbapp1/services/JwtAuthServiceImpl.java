@@ -1,5 +1,4 @@
 package com.sunx.mysprmdbapp1.services;
-
 import com.sunx.mysprmdbapp1.model.JwtUserRole;
 import com.sunx.mysprmdbapp1.errors.APIErrorType;
 import com.sunx.mysprmdbapp1.errors.ApiException;
