@@ -1,7 +1,6 @@
 package middleware
 
 // reference : jwt logic mainly referred from  https://github.com/akmamun/go-jwt  etc.
-
 import (
 	"fmt"
 	helper "go-jwt-mg/src/helpers"
@@ -11,12 +10,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// Auth validates token and authorizes users
+// authentication and authorization
 func Authentication() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		clientToken0 := c.Request.Header.Get("Authorization") // from token to Authorization
+		clientToken0 := c.Request.Header.Get("Authorization") // changed from token to Authorization
 		if clientToken0 == "" {
-			c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("JWT token is not provided in the HTTP request header!")})
+			c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Missing JWT token in the HTTP request header!")})
 			c.Abort()
 			return
 		}

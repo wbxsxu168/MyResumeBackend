@@ -30,7 +30,7 @@ func Dbinstance() *mongo.Client {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Connected to MongoDB..")
+	fmt.Println("Connected to Mongo_DB..")
 
 	return client
 }

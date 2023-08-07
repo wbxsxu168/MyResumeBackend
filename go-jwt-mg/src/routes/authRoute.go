@@ -69,7 +69,6 @@ func HomeRoutes(route *gin.Engine) {
 		sunxs_kickball := prefx_public_path + "/play_soccer0.png"
 		sfggb_img_Lnk := prefx_imgurl_path + "/sfggb.webp"
 		sunx_doc_RLnk := "/myresume/dwnldfile/2/"
-
 		sunx_doc_CLnk := "/myresume/dwnldfile/1/"
 
 		Orgs_set := map[string]string{

@@ -2,7 +2,7 @@ package models
 
 import "time"
 
-//username can be SSOID or email ..
+//username can be SSOID or email address ..
 
 type Useraccount struct {
 	Username         *string   `json:"username" validate:"required"`

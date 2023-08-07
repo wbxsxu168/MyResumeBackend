@@ -22,10 +22,9 @@ type SignedDetails struct {
 }
 
 var userCollection *mongo.Collection = database.OpenCollection(database.Client, "Useraccount")
-
 var SECRET_KEY string = os.Getenv("SECRET_KEY")
 
-// GenerateAllTokens generates both teh detailed token and refresh token
+// access-Token and refresh-Token generation
 func GenerateAllTokens(email string) (signedToken string, signedRefreshToken string, err error) {
 	claims := &SignedDetails{
 		Email: email,
@@ -47,11 +46,10 @@ func GenerateAllTokens(email string) (signedToken string, signedRefreshToken str
 		log.Panic(err)
 		return
 	}
-
 	return token, refreshToken, err
 }
 
-// ValidateToken validates the jwt token
+// Jwt token validation
 func ValidateToken(signedToken string) (claims *SignedDetails, msg string) {
 	token, err := jwt.ParseWithClaims(
 		signedToken,
@@ -78,11 +76,10 @@ func ValidateToken(signedToken string) (claims *SignedDetails, msg string) {
 		msg = err.Error()
 		return
 	}
-
 	return claims, msg
 }
 
-// UpdateAllTokens renews the user tokens when they login
+// renew tokens
 func UpdateAllTokens(signedToken string, signedRefreshToken string, email string) {
 	var ctx, cancel = context.WithTimeout(context.Background(), 100*time.Second)
 

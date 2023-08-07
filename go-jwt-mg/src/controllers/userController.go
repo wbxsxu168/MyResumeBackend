@@ -20,7 +20,7 @@ import (
 var userCollection *mongo.Collection = database.OpenCollection(database.Client, "Useraccount")
 var validate = validator.New()
 
-// HashPassword is used to encrypt the password
+// Hashing Password
 func HashPassword(password string) string {
 	bytes, err := bcrypt.GenerateFromPassword([]byte(password), 14)
 	if err != nil {
@@ -29,20 +29,20 @@ func HashPassword(password string) string {
 	return string(bytes)
 }
 
-// VerifyPassword checks
+// Password etc verification/checks
 func VerifyPassword(userPassword string, providedPassword string) (bool, string) {
 	err := bcrypt.CompareHashAndPassword([]byte(providedPassword), []byte(userPassword))
 	check := true
 	msg := ""
 
 	if err != nil {
-		msg = fmt.Sprintf("username/email or passowrd doesnot match records!")
+		msg = fmt.Sprintf("The input username/email or passowrd does not match records!")
 		check = false
 	}
 	return check, msg
 }
 
-// sign up a new user
+// sign up a new account
 func SignUp() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var ctx, cancel = context.WithTimeout(context.Background(), 100*time.Second)
@@ -64,7 +64,7 @@ func SignUp() gin.HandlerFunc {
 		if err != nil {
 			log.Panic(err)
 			c.JSON(http.StatusInternalServerError,
-				gin.H{"success": false, "data": nil, "message": "error occured while looking up the email"})
+				gin.H{"success": false, "data": nil, "message": "error occured while looking up the email!"})
 
 			return
 		}
@@ -74,7 +74,7 @@ func SignUp() gin.HandlerFunc {
 
 		if count > 0 {
 			c.JSON(http.StatusConflict,
-				gin.H{"success": false, "data": nil, "message": "this email address already exists!"})
+				gin.H{"success": false, "data": nil, "message": "This email address already exists in db, duplicated!"})
 
 			return
 		}
@@ -89,14 +89,14 @@ func SignUp() gin.HandlerFunc {
 
 		result, insertErr := userCollection.InsertOne(ctx, user)
 		if insertErr != nil {
-			msg := fmt.Sprintf("User was not created due to exception in insert DB as: %s", insertErr)
+			msg := fmt.Sprintf("User was not created successfully due to exception in inserting DB as: %s", insertErr)
 			c.JSON(http.StatusInternalServerError,
 				gin.H{"success": false, "data": nil, "message": msg})
 			return
 		}
 
 		defer cancel()
-		c.JSON(http.StatusOK, gin.H{"success": true, "data": result.InsertedID, "message": "user sign up succeed!"})
+		c.JSON(http.StatusOK, gin.H{"success": true, "data": result.InsertedID, "message": "User sign-up succeed!"})
 	}
 }
 
