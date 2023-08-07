@@ -14,12 +14,12 @@ def genHistRptImg(path,fn='origin0.jpeg',uuid='anonymous'):
         sfn=str(fn)
         img = cv2.imread(sfn,0)
 
-        # finding the frequency of pixels in range 0-255
+        # finding the frequency of pixel values in the range of 0-255
         histr = cv2.calcHist([img],[0],None,[256],[0,256])
 
         plt.switch_backend('Agg') 
         plt.xlabel('Pixel gray level')
-        plt.ylabel('Its happing frequency')
+        plt.ylabel('Its happening frequency')
         plt.plot(histr)
         d1=uuid+"_"+"result_histogram.png"
         plt.savefig(str(path / d1))  #src="media/images/uuid_result_histogram.png">
@@ -41,7 +41,7 @@ def genHistEqualizImg(path,fn='origin0.jpeg',uuid='anonymous'):
         z1=uuid+"_"+"histequ_result.jpeg"
         cv2.imwrite(str(path / z1 ),equ_img) 
           
-      # find the frequency of pixels in range 0-255
+      # find the frequency of pixel values in the range of 0-255
         histr0 = cv2.calcHist([ori_img],[0],None,[256],[0,256])
         plt.switch_backend('Agg') 
         plt.xlabel('Pixel gray level')
@@ -72,7 +72,7 @@ def edgeDetectionWColor(path,fn='origin0.jpeg',uuid='anonymous'):
 #       print("str(fn)=",sfn)
         image1 = cv2.imread(sfn)
         d1=uuid+"_"+"origin.jpeg"
-        cv2.imwrite(str(path / d1),image1)   #make a copy for origin image
+        cv2.imwrite(str(path / d1),image1)   #make a copy for the origin image
 
         # Leverage Canny edge detection.
         edgeimg = cv2.Canny(image1, 100, 200)
@@ -92,7 +92,7 @@ def edgeDetectionWColor(path,fn='origin0.jpeg',uuid='anonymous'):
 
         # the window showing output image
         # with the weighted sum
-        #cv2.imshow('Edge detection on retinal vasucular image', weightedSum)
+        #cv2.imshow('Edge detection on the retinal vasucular image', weightedSum)
         d3=uuid+"_"+"ori_edge_combined_result.jpeg"
         cv2.imwrite(str(path / d3 ),image3)
         
