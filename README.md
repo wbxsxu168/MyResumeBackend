@@ -1,7 +1,7 @@
-# MyResumeBackend
+# MyResume Backend
 
 This is a MyResumeK8S Project, which is built by leveraging the latest technology and modern three coding languages.
-Product URL: https://wbxsxu168.github.io/myresume/
+Its URL is https://wbxsxu168.github.io/myresume/
 
 ## Features:
 
@@ -14,7 +14,7 @@ Product URL: https://wbxsxu168.github.io/myresume/
 
 3. CI/CD:  GitHub(webHook)+Jenkins/Docker(using AWS EC2)+K8S/ArgoCD.
 
-4. Monitoring: Datadog or Prometheus+Grafana
+4. Monitoring: Prometheus+Grafana or Datadog
 
 ### Screenshoot:
 
