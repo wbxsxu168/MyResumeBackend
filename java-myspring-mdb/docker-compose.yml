@@ -1,0 +1,12 @@
+version: "3.6"
+services:
+  restapidemo:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: myrestapidemo
+    environment:
+       CORS_ORIGINS: '*'
+    ports:
+      - 8083:8083
+ 

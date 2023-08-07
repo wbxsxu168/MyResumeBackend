@@ -1,0 +1,15 @@
+{% extends "myWebApp1/base.html" %}
+
+{% block content %}
+  <!-- templates/post.html -->
+  <div class="w-25 p-3" style="background-color: #cacbcf;"> 
+    <span id="boot-icon" class="bi bi-camera-fill" style="font-size: 2rem; color: rgb(30, 113, 237);">Upload a New Image</span><br><br>
+    <form method="post" enctype="multipart/form-data"  >
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-success pull-right">Submit</button>
+      <button type="reset" class="btn btn-light pull-right"> Reset </button>
+      <a href="/"><button type="button" class="btn btn-info">Cancel</button></a>
+    </form>
+ </div>
+{% endblock content %}

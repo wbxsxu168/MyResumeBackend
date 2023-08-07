@@ -1,0 +1,14 @@
+Django==4.2
+django-bootstrap-v5
+django-cors-headers
+djangorestframework
+djangorestframework-jwt
+djangorestframework-simplejwt
+matplotlib
+numpy
+opencv-python-headless
+pandas
+social-auth-app-django
+social-auth-core
+drf_yasg
+PyJWT==1.7.1

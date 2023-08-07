@@ -1,0 +1,19 @@
+{% extends "myWebApp1/base.html" %}
+
+{% block content %}
+<div class="w-50 p-3" style="background-color: #cacbcf;"> 
+	<span id="boot-icon" class="bi bi-pencil-square" style="font-size: 2rem; color: rgb(0, 128, 55);">Updating the selected record</span><br><br>
+	<div class="main">
+		<!-- Create a Form -->
+		<form method="POST">
+			<!-- Security token by Django -->
+			{% csrf_token %}
+			<!-- form as paragraph -->
+			{{ form.as_p }}
+			<button type="submit" class="btn btn-warning pull-right" value="Update">Submit</button>	
+			<button type="reset" class="btn btn-light pull-right"> Reset </button>	 
+			<a href="/"><button type="button" class="btn btn-info">Cancel</button></a>			
+		</form>
+	</div>
+</div>	
+{% endblock content %}

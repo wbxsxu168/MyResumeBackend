@@ -1,0 +1,105 @@
+<!-- templates/registration/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Image Processing and Management Demo System
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="600">
+    {% load static %}	
+    <style>
+        .divider:after,
+        .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #e9e6e6;
+        }
+        body {
+            background-image: url("{% static 'public_tFy5V1E0Kn/bayarea1.jpeg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+    <script type = "text/javascript">  
+        function remindInfo() {  
+          alert ("This feature is not support for this version!");  
+        }  
+    </script>       
+  </head>
+<body>
+ 
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js" >
+  </script>
+    <section class="vh-100" >
+      <div class="container py-5 h-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+          <div class="col-md-8 col-lg-7 col-xl-6">
+         
+          </div>
+          <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            {% for error1 in form.non_field_errors %}               
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">      
+                <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </symbol>
+              </svg>
+              <div class="alert alert-danger d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                  <use xlink:href="#exclamation-triangle-fill"/>
+                </svg>
+                <div>
+                  {{error1}}
+                </div>
+              </div>
+            {% endfor %}
+            <form  method="POST">
+              {% csrf_token %} 
+              <!-- User name input -->
+              <!-- <div class="form-outline mb-4"> -->
+                <label class="form-label " for="inputEmail">User name</label>  
+                <input type="input" name="username" id="inputEmail" class="form-control form-control-lg" />
+              <!-- </div>  -->
+
+              <!-- Password input -->
+              <!-- <div class="form-outline mb-4">  -->
+                <label class="form-label" for="inputPass">Password</label>   
+                <input type="password" name="password" id="inputPass" class="form-control form-control-lg" />
+              <!-- </div> -->
+
+              <div class="d-flex justify-content-around align-items-center mb-4">
+                <!-- Checkbox checked />  -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3"   />
+                  <label class="form-check-label" for="form1Example3"> Remember Me </label>
+                </div>
+                <a href="#!" onclick="remindInfo();" >Reset Password</a>
+              </div>
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-lg btn-block ">Sign in</button>
+              <div class="divider d-flex align-items-center my-4">
+                <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+              </div>
+              <!--href="\{\% url 'social:begin' 'github' \%\}"-->
+              <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" 
+                href="#!" onclick="remindInfo();" role="button">
+                <i class="fab fa-github me-2"></i>Continue  with Github.
+              </a>
+              <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" 
+              href="#!"  onclick="remindInfo();" role="button">
+                <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+              </a>              
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>	
+ 

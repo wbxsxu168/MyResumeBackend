@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is a testing page!</title>
+  </head>
+  <body>
+    <h1>{{ .orgs_set.pubrmico }}</h1>
+
+    
+    {{ range $key, $value := .skill_set }}
+        key: {{ $key }}
+        Name: {{ $value }},  
+    {{ end }}
+
+    {{ range $key,$v := .skl_degree_lst }}
+        <h1>{{ $key }}</h1>
+        <h3>{{ $v.name }}</h3>
+        <h3>{{ $v.valueP }}</h3>
+        <h3>{{ $v.valueC }}</h3>
+        <hr/>
+    {{ end }}
+
+    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+  </body>
+</html>

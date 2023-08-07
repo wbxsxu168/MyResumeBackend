@@ -1,0 +1,31 @@
+{% extends "myWebApp1/base.html" %}
+
+{% block content %}
+
+<div class="w-100 p-3" style="background-color: #eef9f0;"> 
+	<div>
+		
+		
+		<h3 style="color:green;text-align:center;">
+			<i class="bi bi-hand-thumbs-up"></i> The image "{{ data.img.url }}" <br>has been succesfully processed!<br/>
+		</h3>
+
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+		</div>
+		<h5>
+			<a href="/">Back manually</a>
+		</h5>
+	</div>
+	<script>
+		/*function adjustPBar() {	
+			adjustPBar.value=0;
+        	$( ".progress-bar" ).css( "width", adjustPBar.value + "%" ).attr( "aria-valuenow", adjustPBar.value ); 
+			adjustPBar.value=adjustPBar.value+35;
+		}	*/
+		setTimeout(function(){
+  		document.location = document.referrer},600)
+		clearInterval()
+	</script>
+</div>	
+{% endblock content %}

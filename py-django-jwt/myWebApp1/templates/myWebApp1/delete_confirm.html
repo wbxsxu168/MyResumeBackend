@@ -1,0 +1,17 @@
+{% extends "myWebApp1/base.html" %}
+
+{% block content %}
+<div class="w-50 p-3" style="background-color: #cacbcf;"> 	 
+	<div class="main">
+		<!-- Create a Form -->
+		<form method="POST">
+			<!-- Security token by Django -->
+			{% csrf_token %}		
+			<i class="bi bi-trash" style="font-size: 2rem; color: rgb(255, 0, 0);">Are you sure to delete this item?</i>
+			<br><br>		 
+			<button type="submit" class="btn btn-danger pull-right" value="Yes">Yes</button>		 
+			<a href="/"><button type="button" class="btn btn-info">Cancel</button></a>			
+		</form>	
+	</div>
+</div>	
+{% endblock content %}
