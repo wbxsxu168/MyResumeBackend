@@ -14,7 +14,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 
 /**
- * GraphQL controller for ImageRecords.
+ * Sun Xu 
+ * GraphQL controller added for querying ImageRecords.
  */
 @Controller 
 public class GraphQlCtroller1 {
