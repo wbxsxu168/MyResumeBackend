@@ -1,6 +1,6 @@
 """
 __author__ = "Sun Xu"
-__copyright__ = "Copyright 2023, My Resume and IMage Process Demo Project"
+__copyright__ = "Copyright 2023, My Resume and Image Processing Demo Project"
 
 """
 

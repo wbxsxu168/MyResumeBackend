@@ -1,6 +1,6 @@
 """
 __author__ = "Sun Xu"
-__copyright__ = "Copyright 2023, My Resume and IMage Process Demo Project"
+__copyright__ = "Copyright 2023, My Resume and Image Processing Demo Project"
 
 """
 from django import forms
@@ -41,7 +41,7 @@ class PostForm(forms.ModelForm):
 class MyAuthForm(AuthenticationForm):
     error_messages = {
         'invalid_login': _(
-            "The information you entered does not match our records! Please try again."
+            "The information you entered does not match our records! Please try again. Note: username/pwd are Case-sensitive."
             #"You may retry.. Note: Case-sensitive."
         ),
         'inactive': _("This account is deactivated status."),

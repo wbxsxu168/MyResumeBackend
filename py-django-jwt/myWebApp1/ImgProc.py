@@ -1,16 +1,12 @@
 """
 __author__ = "Sun Xu"
-__copyright__ = "Copyright 2023, My Resume and IMage Process Demo Project"
-
+__copyright__ = "Copyright 2023, My Resume and Image Process Demo Project"
 """
 # importing required libraries of opencv
 import cv2
-# importing library for plotting
 from matplotlib import pyplot as plt
-# import Numpy
 import numpy as np
 from pathlib import Path
-
 
 def genHistRptImg(path,fn='origin0.jpeg',uuid='anonymous'):
     try:
@@ -18,12 +14,9 @@ def genHistRptImg(path,fn='origin0.jpeg',uuid='anonymous'):
         sfn=str(fn)
         img = cv2.imread(sfn,0)
 
-        # find frequency of pixels in range 0-255
+        # finding the frequency of pixels in range 0-255
         histr = cv2.calcHist([img],[0],None,[256],[0,256])
 
-        # show the plotting graph of an image
-        #Now if you want to save matplotlib figures as image files programmatically, 
-        # then all you need is matplotlib. pyplot. savefig() function. Simply pass the desired filename (and even location) and the figure will be stored on your disk.
         plt.switch_backend('Agg') 
         plt.xlabel('Pixel gray level')
         plt.ylabel('Its happing frequency')
@@ -34,13 +27,13 @@ def genHistRptImg(path,fn='origin0.jpeg',uuid='anonymous'):
         plt.close()
         
     except IOError:
-        print ('Error while reading files !!!')
+        print ('Error while reading the image files !!!')
     
     
 
 def genHistEqualizImg(path,fn='origin0.jpeg',uuid='anonymous'):
     try:    
-        # read an image using imread
+        # reading an image using imread
         sfn=str(fn)
         ori_img = cv2.imread(sfn, 0)       
         equ_img = cv2.equalizeHist(ori_img)  
@@ -48,7 +41,7 @@ def genHistEqualizImg(path,fn='origin0.jpeg',uuid='anonymous'):
         z1=uuid+"_"+"histequ_result.jpeg"
         cv2.imwrite(str(path / z1 ),equ_img) 
           
-      # find frequency of pixels in range 0-255
+      # find the frequency of pixels in range 0-255
         histr0 = cv2.calcHist([ori_img],[0],None,[256],[0,256])
         plt.switch_backend('Agg') 
         plt.xlabel('Pixel gray level')
@@ -69,7 +62,7 @@ def genHistEqualizImg(path,fn='origin0.jpeg',uuid='anonymous'):
         plt.close()        
             
     except IOError:
-        print ('Error while reading files !!!')
+        print ('Error while reading the image files !!!')
     
 def edgeDetectionWColor(path,fn='origin0.jpeg',uuid='anonymous'):
     #FILE_NAME = 'retinal_diab1.jpeg'
@@ -81,7 +74,7 @@ def edgeDetectionWColor(path,fn='origin0.jpeg',uuid='anonymous'):
         d1=uuid+"_"+"origin.jpeg"
         cv2.imwrite(str(path / d1),image1)   #make a copy for origin image
 
-        # Canny edge detection.
+        # Leverage Canny edge detection.
         edgeimg = cv2.Canny(image1, 100, 200)
 
         # Write image back to disk.
@@ -113,8 +106,4 @@ def edgeDetectionWColor(path,fn='origin0.jpeg',uuid='anonymous'):
         cv2.imwrite(str(path / d5 ), img_closing)
  
     except IOError:
-        print ('Error while reading files !!!')
-
-
-    
-
+        print ('Error while reading the image files !!!')

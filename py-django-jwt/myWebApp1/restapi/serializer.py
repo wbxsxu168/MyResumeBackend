@@ -17,7 +17,6 @@ class GAPIImgRecSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = MyMFModel1
 		fields = ('id','img','owner_nme','title','description','create_time','last_modified')
-        #fields = ('user','img','title','description','create_time','last_modified')
         
 	def get_owner_name(self, obj):
 		return obj.user.username

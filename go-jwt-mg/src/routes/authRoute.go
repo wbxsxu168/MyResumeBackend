@@ -16,13 +16,15 @@ func UserRoutes(route *gin.Engine) {
 
 // ======== Sun Xu added ========
 // React2ResumePage
+// Copyright 2023, MyResume Project
+
 func HomeRoutes(route *gin.Engine) {
 	route.GET("/api/h1H3Fyw5Kjfy1/", func(ctx *gin.Context) {
 		//---------------var set --------------------------------
 		base_path := "http://localhost:8080/"
 		var isDebug = true
 		if !isDebug {
-			base_path = "https://wbxsxu168.pythonanywhere.com/"
+			base_path = "___Prod_backend_URL_here___"
 		}
 		bkendServiceURL := base_path
 		prefx_imgauthurl_path := base_path + "media/docs"

@@ -9,20 +9,12 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-##### tmp
-#import django
-#from django.utils.encoding import force_str
-#django.utils.encoding.force_text = force_str
-#######
 
 from datetime import timedelta
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
- 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
@@ -98,7 +90,6 @@ MIDDLEWARE = [
     'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
-#ROOT_URLCONF = 'myWebApp1.urls'  # myProject1.urls to app.urls
 ROOT_URLCONF = 'myProject1.urls'
 
 TEMPLATES = [
@@ -171,15 +162,12 @@ MEDIA_ROOT = BASE_DIR / "media"
 STATIC_URL = 'static/'
 
 #STATIC_ROOT = BASE_DIR / "prdstatic"    # this dir used for collecting static file for prod use
-
 STATICFILES_DIRS = [
     BASE_DIR / "static",    
 ]
- 
   
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #temp for debugging
@@ -222,8 +210,6 @@ SOCIAL_AUTH_GITHUB_KEY ='2xxxxxxxxxxxxxx8'
 SOCIAL_AUTH_GITHUB_SECRET = '7xxxxxxxxxxxxxxxxxxxxxxb2'
 SESSION_COOKIE_AGE = 300 # 5 minutes. "1209600(2 weeks)" by default
 SESSION_SAVE_EVERY_REQUEST = True # "False" by default
-
-
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,

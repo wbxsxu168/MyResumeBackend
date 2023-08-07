@@ -48,6 +48,8 @@ class ImgRecRestAPIViewSet1(viewsets.ModelViewSet):
 			return  queryset.all()
 
 #===========================HtmlResumeAPIView===================
+# React2ResumePage
+# Copyright 2023, Sun Xu MyResume Project
 
 class HtmlResumeAPIView(APIView):
     queryset = MyMFModel1.objects.all()
@@ -63,7 +65,7 @@ class HtmlResumeAPIView(APIView):
       
         base_path="http://localhost:8080/"
         if (not settings.DEBUG):
-            base_path="https://wbxsxu168.pythonanywhere.com/"
+            base_path="___your_backend_URL_here___"
         
         bkendServiceURL=base_path    
         prefx_imgauthurl_path=base_path+"media/docs"
@@ -172,14 +174,6 @@ class HtmlResumeAPIView(APIView):
         myrecognition_set1={
             "csc_award":recogimg_fp1, 
             "wbxteo_award":recogimg_fp2,
-#            "csc_support_award1":recogimg_fpc1,  
-#            "csc_support_award3":recogimg_fpc3, 
-#            "csc_support_award4":recogimg_fpc4, 
-#            "csc_support_award5":recogimg_fpc5, 
-#            "csc_support_award6":recogimg_fpc6, 
-#            "csc_support_award7":recogimg_fpc7, 
-#            "csc_support_award8":recogimg_fpc8, 
-#            "csc_support_award9":recogimg_fpc9
             } 
         
         myrecognition_set={ 

@@ -1,5 +1,4 @@
 from django.urls import include, path
-#from . import views
 from .views import MyTokenObtainPairView
 from .views import ImgRecRestAPIViewSet1
 from .views import HtmlResumeAPIView
@@ -25,7 +24,7 @@ schema_view = get_schema_view(
         default_version='v1',
         description="Test Swagger First Blog",
         terms_of_service="https://www.ourapp.com/policies/terms/",
-        contact=openapi.Contact(email="wbxsxu168@hotmail.com"),
+        contact=openapi.Contact(email="__email_here__"),
         license=openapi.License(name="Test Swagger License"),
     ),
     public=True,
