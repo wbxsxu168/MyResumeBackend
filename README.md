@@ -18,51 +18,38 @@ Its URL is https://wbxsxu168.github.io/myresume/
 
 ### Screenshoot:
 
-![r_login](https://github.com/wbxsxu168/myresumek8s/assets/122004201/00a3c0b9-b881-4a01-91ff-a7bdb4c2114f)
-
+![login](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/1efa1f79-7f96-44a7-9899-317170a5a832)
 
 <div align="center">Fig.1 Login Page</div>
 
-
-![r_resumeH](https://github.com/wbxsxu168/myresumek8s/assets/122004201/d5fa0d2e-d63c-46a8-b3d6-ca0142b03e40)
-
+![myHomePage](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/26eaf104-216a-4ed8-b6b3-769158a050e4)
 
 <div align="center">Fig.2 Resume Home page</div>
 
-
-![r_imgPro](https://github.com/wbxsxu168/myresumek8s/assets/122004201/40461ea7-fb95-4697-b697-48ef0981e6dc)
-
+![ImgProcessing](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/61a3075c-cc01-42bf-ac19-6ddb83293558)
 
 <div align="center">Fig.3 Image Processing and Pattern recogition demo system</div>
 
-![r_jenkins](https://github.com/wbxsxu168/myresumek8s/assets/122004201/056fc042-e4d7-4c6b-8909-28291cbed4b0)
-
+![JenkinBuild](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/fe304360-4c05-4d11-83bf-7aa683cf4ce6)
 
 <div align="center">Fig.4 CI/CD : Jenkins part</div>
 
-
-![r_argocd](https://github.com/wbxsxu168/myresumek8s/assets/122004201/a0fe3a79-e413-4391-b209-32b3a95f294b)
+![K8S_ArgoCD](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/b8be128d-80a7-432e-b4fd-82bccbda89dd)
 
 <div align="center">Fig.5 CI/CD: K8S/ArgoCD part</div>
 
-![go-jwt-mongodb-demo](https://github.com/wbxsxu168/myresumek8s/assets/122004201/1cc534cf-05eb-4d52-88c1-d887ab5544a7)
-
+![GolangSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/f4536e27-39af-481a-a246-ca6665bd34c2)
 
 <div align="center">Fig.6 Go Gin-based backend</div>
 
-![restapi_ec2_mongo](https://github.com/wbxsxu168/myresumek8s/assets/122004201/b29bbcf8-2757-4697-8e43-8e68b7be821e)
+![EC2RFAPISample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/8e911889-64b0-42c9-ab9f-a6128bf37605)
 
-<div align="center">Fig.5 Java Spring Boot based Restful API backend</div>
+<div align="center">Fig.7 Java Spring Boot based Restful API backend</div>
 
-![ec2_graphiql2](https://github.com/wbxsxu168/myresumek8s/assets/122004201/11d16097-5e0c-4920-aa11-c8cffffda01d)
+![GraphQLSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/0d9e0a03-1a10-4af6-ab41-2c653dbcb2a0)
 
+<div align="center">Fig.8 GraphQL+Spring Security/JWT based API backend</div>
 
-<div align="center">Fig.6 GraphQL+Spring Security/JWT based API backend</div>
+![GrafanaSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/13e6d1a9-ed09-4614-ba1e-30b31eea5c83)
 
-![datadog_ec2_mon](https://github.com/wbxsxu168/myresumek8s/assets/122004201/9407337e-1a21-4ad1-a0b2-944b29b2748f)
-
-<div align="center">Fig.7 EC2 monitoring by Datadog</div>
-
-![prometheus_grafana](https://github.com/wbxsxu168/myresumek8s/assets/122004201/dbbb05a1-6e15-42e9-a619-bab83c652e81)
-
-<div align="center">Fig.8 Prometheus+Grafana based monitoring</div>
+<div align="center">Fig.9 Prometheus+Grafana based monitoring</div>
