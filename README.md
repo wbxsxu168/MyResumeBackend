@@ -5,16 +5,16 @@ Its URL is https://wbxsxu168.github.io/myresume/
 
 ## Features:
 
-1. Frontend: React+MDB+Bootstrap v5+Axios  ( https://github.com/wbxsxu168/frontendMyResume.git )
+1. Frontend: React + MDB + Bootstrap v5 + Axios  ( https://github.com/wbxsxu168/frontendMyResume.git )
 
 2. Backend:
-   <div>version1: Python Django+DRF+JWT; OpenCV; NumPY etc.</div>
-   <div>version2: Golang Gin+JWT+CORS+MongoDB</div>
-   <div>version3: Java Spring Boot+Restapi+Swagger+GraphQL+Spring Security/JWT+MongoDB </div>
+   <div>version1: Python Django + DRF + JWT; OpenCV; NumPY etc.</div>
+   <div>version2: Golang Gin + JWT + CORS + MongoDB</div>
+   <div>version3: Java Spring Boot + Restapi + Swagger + GraphQL + Spring Security/JWT + MongoDB </div>
 
-3. CI/CD:  GitHub(webHook)+Jenkins/Docker(using AWS EC2)+K8S/ArgoCD.
+3. CI/CD:  GitHub(webHook) + Jenkins/Docker(using AWS EC2) + K8S/ArgoCD.
 
-4. Monitoring: Prometheus+Grafana or Datadog
+4. Monitoring: Prometheus + Grafana or Datadog
 
 ### Screenshoot:
 
