@@ -1,0 +1,59 @@
+---
+- hosts: myresumek8s
+  become: yes
+  become_method: sudo
+
+  tasks:
+
+  - name: Install pip software
+    apt:
+      update_cache: yes
+      name: python3-pip
+
+  - name: Install aptitude using apt
+    apt: name=aptitude state=latest update_cache=yes force_apt_get=yes
+
+  - name: Install required system packages
+    apt: name={{ item }} state=latest update_cache=yes
+    loop: [ 'apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common', 'python3-pip', 'virtualenv', 'python3-setuptools']
+
+  - name: Add Docker GPG apt Key
+    apt_key:
+      url: https://download.docker.com/linux/ubuntu/gpg
+      state: present
+
+  - name: Add Docker Repository
+    apt_repository:
+      repo: deb https://download.docker.com/linux/ubuntu bionic stable
+      state: present
+
+  - name: Update apt and install docker-ce
+    apt: update_cache=yes name=docker-ce state=latest
+
+  - name: install docker-py
+    pip: name=docker-py
+
+  - name: enable Docker services
+    service:
+      name: "docker"
+      state: started
+      enabled: yes
+
+  - name: Check whether Docker container is running status
+    shell: docker ps
+
+  - name: Log into DockerHub
+    community.docker.docker_login:
+      username: XXXXXXX
+      password: XXXXXXXX
+
+  - name: run docker image
+    shell: docker run -dit --name myresumek8s -p 8080:8000 XXXXXXX/myresumek8s:10
+
+  - name: show running images
+    shell: docker images
+
+  - name: Log out of DockerHub
+    community.docker.docker_login:
+      state: absent
+

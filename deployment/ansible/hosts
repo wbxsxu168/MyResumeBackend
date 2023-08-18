@@ -1,0 +1,2 @@
+[myresumek8s]
+ec2-1X-XXX-XXX-1XX.us-east-2.compute.amazonaws.com ansible_ssh_private_key_file=~/.ssh/my_aws.pem
