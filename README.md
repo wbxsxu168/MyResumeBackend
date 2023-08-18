@@ -14,9 +14,9 @@ Its URL is https://wbxsxu168.github.io/myresume/
 
 3. CI/CD:  GitHub(webHook) + Jenkins/Docker(using AWS EC2) + K8S/ArgoCD.
 
-4. Deployment of the Image Processing System: Terraform for provisioning EC2 instance. Ansible for configuration managment.
+4. EC2 Deployment: Terraform for provisioning EC2 instance, and Ansible for configuration/deployment managment.
     
-5. Monitoring: Prometheus + Grafana or Datadog
+5. Monitoring: Prometheus + Grafana or Datadog.
 
 ### Screenshoot:
 
@@ -62,7 +62,7 @@ Its URL is https://wbxsxu168.github.io/myresume/
 
 ![ec2_autodeployment](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/6021129e-8e21-42e3-8c87-df1a8ad230d0)
 
-<div align="center">Fig.9 Terraform and Ansible based auto deployment</div>
+<div align="center">Fig.9 Terraform and Ansible based auto deployment on the Image Processing System</div>
 
 
 ![GrafanaSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/13e6d1a9-ed09-4614-ba1e-30b31eea5c83)
