@@ -301,12 +301,17 @@
                             {{ end }}
                           {{ end }}              
                         </div>
-                        <div class="carousel-inner" >                      
-                         
+                        <div class="carousel-inner" >                                               
                           {{ range $key3, $value3 := .recogn_set }}
-                              <div class="carousel-item active" data-mdb-interval="3000" >
-                                <img src="{{$value3}}" class="d-block w-100" alt="{{$key3}}"  />
-                              </div>                                        
+                              {{  if eq $key3 "csc_award" }}  
+                                <div class="carousel-item active" data-mdb-interval="3000" >
+                                  <img src="{{$value3}}" class="d-block w-100" alt="{{$key3}}"  />
+                                </div>
+                              {{ else }}  
+                                <div class="carousel-item" data-mdb-interval="3000" >
+                                  <img src="{{$value3}}" class="d-block w-100" alt="{{$key3}}"  />
+                                </div>
+                              {{ end }}                                
                           {{ end }}
                         </div>
                         <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide="prev">
