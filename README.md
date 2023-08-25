@@ -11,6 +11,7 @@ Its URL is https://wbxsxu168.github.io/myresume/
    <div>version1: Python Django + DRF + JWT; OpenCV; NumPY etc.</div>
    <div>version2: Golang Gin + JWT + CORS + MongoDB</div>
    <div>version3: Java Spring Boot + Restapi + Swagger + GraphQL + Spring Security/JWT + MongoDB </div>
+   <div>version4: Node.js/Express.js + EJS + JWT + CORS + MongoDB Atlas (src-code at the frondend repository as js based)</div>
 
 3. CI/CD:  GitHub(webHook) + Jenkins/Docker(using AWS EC2) + K8S/ArgoCD.
 
