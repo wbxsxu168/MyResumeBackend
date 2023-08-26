@@ -1,6 +1,6 @@
 # MyResumeK8S Backend
 
-This is a My Resume K8S Project, which has been built by leveraging the latest technology/github-resource and modern three coding languages.
+This is a My Resume K8S Project, which has been built by leveraging the latest technology/github-resource and four popular coding languages/frameworks.
 Its URL is https://wbxsxu168.github.io/myresume/
 
 ## Features:
