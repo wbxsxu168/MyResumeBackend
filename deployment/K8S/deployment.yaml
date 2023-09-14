@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: myresumeapp
+  name: myresumeapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myresumeapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: myresumeapp
+    spec:
+      containers:
+      - image: wbxsxu168/myresumek8s:17
+        name: myresumeapp
+        resources: {}
+      imagePullSecrets:
+      - name: dockerhub-creds
+
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lb-service
+  labels:
+    app: lb-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+    targetPort: 8000
+  selector:
+    app: myresumeapp
