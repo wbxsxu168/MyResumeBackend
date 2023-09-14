@@ -1,6 +1,6 @@
 step1: remove previous deployment by running ./uninstall.sh
 
-step2: When using  minikube alike K8S. Unlike AWS or Google Cloud,
+step2: When using  minikube alike K8S. Unlike AWS or GCP,
 it needs to launch Minikube tunnel in another console( do not close it when the APP was running), for load balancer service to bind external IP.
 example:
 sunxu@Suns-iMac ~ % minikube tunnel
