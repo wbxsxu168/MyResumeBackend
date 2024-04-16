@@ -73,5 +73,5 @@ Its URL is https://wbxsxu168.github.io/myresume/
 
 ![eks_mon](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/d39033ed-7115-4d53-91d5-a13646fce58d)
 
-<div align="center">Fig.11 EKS monitoring</div>
+<div align="center">Fig.11 EKS monitoring using Prometheus & Grafana </div>
 
