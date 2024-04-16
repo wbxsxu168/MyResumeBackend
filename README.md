@@ -69,6 +69,8 @@ Its URL is https://wbxsxu168.github.io/myresume/
 ![GrafanaSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/13e6d1a9-ed09-4614-ba1e-30b31eea5c83)
 
 <div align="center">Fig.10 Prometheus+Grafana based monitoring</div>
+
+
 ![eks_mon](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/d39033ed-7115-4d53-91d5-a13646fce58d)
 
 <div align="center">Fig.11 EKS monitoring</div>
