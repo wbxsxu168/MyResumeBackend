@@ -1,0 +1,6 @@
+step1: run install_eks.sh
+step2: run three steps in the iam directory
+step3: run install_prometheus.sh
+step4: run install_grafana.sh
+step5: setup grafana to monitor the EKS cluster
+step6: delete the EKS cluster
