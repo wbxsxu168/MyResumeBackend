@@ -78,3 +78,7 @@ Its URL is https://wbxsxu168.github.io/myresume/
 ![k8s_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/9c47e9c9-dd1e-41cc-8569-c2baa268494b)
 
 <div align="center">Fig.12 CI/CD & HA K8S </div>
+
+![postgresql_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/b56d62fd-54c9-4bad-9e35-49810896b6bf)
+
+<div align="center">Fig.13 DB HA </div>
