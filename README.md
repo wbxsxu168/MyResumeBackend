@@ -75,3 +75,6 @@ Its URL is https://wbxsxu168.github.io/myresume/
 
 <div align="center">Fig.11 EKS monitoring using Prometheus & Grafana </div>
 
+![k8s_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/9c47e9c9-dd1e-41cc-8569-c2baa268494b)
+
+<div align="center">Fig.12 CI/CD & HA K8S </div>
