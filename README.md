@@ -66,19 +66,28 @@ Its URL is https://wbxsxu168.github.io/myresume/
 <div align="center">Fig.9 Terraform and Ansible based auto deployment on the Image Processing System</div>
 
 
-![GrafanaSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/13e6d1a9-ed09-4614-ba1e-30b31eea5c83)
+![k8s_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/9c47e9c9-dd1e-41cc-8569-c2baa268494b)
 
-<div align="center">Fig.10 Prometheus+Grafana based monitoring</div>
+<div align="center">Fig.10 CI/CD & HA K8S </div>
+
+
+![postgresql_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/b56d62fd-54c9-4bad-9e35-49810896b6bf)
+
+<div align="center">Fig.11 DB HA </div>
+
+
+![redis_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/b3941179-70ff-4252-9f86-665a4def6794)
+
+<div align="center">Fig.12 Redis HA </div>
 
 
 ![eks_mon](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/d39033ed-7115-4d53-91d5-a13646fce58d)
 
-<div align="center">Fig.11 EKS monitoring using Prometheus & Grafana </div>
+<div align="center">Fig.13 EKS monitoring using Prometheus & Grafana </div>
 
-![k8s_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/9c47e9c9-dd1e-41cc-8569-c2baa268494b)
 
-<div align="center">Fig.12 CI/CD & HA K8S </div>
+![GrafanaSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/13e6d1a9-ed09-4614-ba1e-30b31eea5c83)
 
-![postgresql_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/b56d62fd-54c9-4bad-9e35-49810896b6bf)
+<div align="center">Fig.14 Prometheus+Grafana monitoring sample</div>
 
-<div align="center">Fig.13 DB HA </div>
+
