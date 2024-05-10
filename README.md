@@ -81,13 +81,18 @@ Its URL is https://wbxsxu168.github.io/myresume/
 <div align="center">Fig.12 Redis HA </div>
 
 
+![kafka_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/d4097463-b8b0-4941-a1f4-57022dcd47cd)
+
+<div align="center">Fig.13 Kafka HA </div>
+
+
 ![eks_mon](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/d39033ed-7115-4d53-91d5-a13646fce58d)
 
-<div align="center">Fig.13 EKS monitoring using Prometheus & Grafana </div>
+<div align="center">Fig.14 EKS monitoring using Prometheus & Grafana </div>
 
 
 ![GrafanaSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/13e6d1a9-ed09-4614-ba1e-30b31eea5c83)
 
-<div align="center">Fig.14 Prometheus+Grafana monitoring sample</div>
+<div align="center">Fig.15 Prometheus+Grafana monitoring sample</div>
 
 
