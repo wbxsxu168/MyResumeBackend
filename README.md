@@ -36,39 +36,39 @@ Its URL is https://wbxsxu168.github.io/myresume/
 <div align="center">Fig.3 Image Processing and Pattern recogition demo system</div>
 
 
+![k8s_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/9c47e9c9-dd1e-41cc-8569-c2baa268494b)
+
+<div align="center">Fig.4 CI/CD & HA K8S </div>
+
+
 ![JenkinBuild](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/fe304360-4c05-4d11-83bf-7aa683cf4ce6)
 
-<div align="center">Fig.4 CI/CD : Jenkins part</div>
+<div align="center">Fig.5 CI/CD : Jenkins part</div>
 
 
 ![K8S_ArgoCD](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/b8be128d-80a7-432e-b4fd-82bccbda89dd)
 
-<div align="center">Fig.5 CI/CD: K8S/ArgoCD part</div>
+<div align="center">Fig.6 CI/CD: K8S/ArgoCD part</div>
 
 
 ![GolangSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/f4536e27-39af-481a-a246-ca6665bd34c2)
 
-<div align="center">Fig.6 Go Gin-based backend</div>
+<div align="center">Fig.7 Go Gin-based backend</div>
 
 
 ![EC2RFAPISample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/8e911889-64b0-42c9-ab9f-a6128bf37605)
 
-<div align="center">Fig.7 Java Spring Boot based Restful API backend</div>
+<div align="center">Fig.8 Java Spring Boot based Restful API backend</div>
 
 
 ![GraphQLSample](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/0d9e0a03-1a10-4af6-ab41-2c653dbcb2a0)
 
-<div align="center">Fig.8 GraphQL+Spring Security/JWT based API backend</div>
+<div align="center">Fig.9 GraphQL+Spring Security/JWT based API backend</div>
 
 
 ![ec2_autodeployment](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/6021129e-8e21-42e3-8c87-df1a8ad230d0)
 
-<div align="center">Fig.9 Terraform and Ansible based auto deployment on the Image Processing System</div>
-
-
-![k8s_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/9c47e9c9-dd1e-41cc-8569-c2baa268494b)
-
-<div align="center">Fig.10 CI/CD & HA K8S </div>
+<div align="center">Fig.10 Terraform and Ansible based auto deployment on the Image Processing System</div>
 
 
 ![postgresql_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/b56d62fd-54c9-4bad-9e35-49810896b6bf)
