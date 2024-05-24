@@ -36,7 +36,8 @@ Its URL is https://wbxsxu168.github.io/myresume/
 <div align="center">Fig.3 Image Processing and Pattern recogition demo system</div>
 
 
-![k8s_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/9c47e9c9-dd1e-41cc-8569-c2baa268494b)
+![k8s_ha](https://github.com/wbxsxu168/MyResumeBackend/assets/122004201/58c4fcf2-4238-4ac2-b4ce-04ba84606941)
+
 
 <div align="center">Fig.4 CI/CD & HA K8S </div>
 
