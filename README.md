@@ -96,4 +96,7 @@ Its URL is https://wbxsxu168.github.io/myresume/
 
 <div align="center">Fig.15 Prometheus+Grafana monitoring sample</div>
 
+<img width="1710" alt="retinal_img_login" src="https://github.com/user-attachments/assets/6c8f5651-c3bb-4579-9edc-3e7d1af8888e">
+
+<div align="center">Fig.16 AWS Demo 1</div>
 
